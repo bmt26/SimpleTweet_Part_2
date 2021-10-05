@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="5dp"
+    android:background="#222222">
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -24,6 +25,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="#888888"
         tools:text="rpandey1234" />
 
     <TextView
@@ -34,5 +36,8 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="#FFFFFF"
+        android:autoLink="all"
+        android:linksClickable="true"
         tools:text="This is my tweet!!" />
 </RelativeLayout>
