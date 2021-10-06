@@ -36,6 +36,8 @@
                     android:scheme="@string/intent_scheme" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ComposeActivity" />
     </application>
 
 </manifest>
