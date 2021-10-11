@@ -26,6 +26,7 @@
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:textColor="#FFFFFF"
+        android:textColorLink="#1DA1F2"
         tools:text="rpandey1234" />
 
     <TextView
@@ -37,6 +38,7 @@
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/tvName"
         android:textColor="#888888"
+        android:textColorLink="#1DA1F2"
         tools:text="@rpandey1234" />
 
     <TextView
@@ -48,6 +50,7 @@
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/tvScreenName"
         android:textColor="#888888"
+        android:textColorLink="#1DA1F2"
         tools:text="· 5m" />
 
     <TextView
@@ -58,8 +61,9 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        android:textColor="#FFFFFF"
         android:autoLink="all"
         android:linksClickable="true"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#1DA1F2"
         tools:text="This is my tweet!!" />
 </RelativeLayout>

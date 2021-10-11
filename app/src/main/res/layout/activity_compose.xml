@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ComposeActivity" >
+    android:background="#000000"
+    tools:context=".ComposeActivity">
 
     <Button
         android:id="@+id/btnTweet"
@@ -15,7 +15,9 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="@string/tweet" />
+        android:backgroundTint="#1DA1F2"
+        android:text="@string/tweet"
+        android:textColor="#FFFFFF" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilCounter"
@@ -25,13 +27,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
+        android:background="#222222"
+        android:textColorHint="#888888"
         app:counterEnabled="true"
         app:counterMaxLength="@integer/max_tweet_length"
         app:counterOverflowTextAppearance="@style/counterOverride"
-        app:counterTextAppearance="@style/counterText">
+        app:counterTextAppearance="@style/counterText"
+        app:hintTextColor="#888888">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietCompose"
@@ -42,6 +47,10 @@
             android:hint="@string/what_s_happening"
             android:inputType="textMultiLine"
             android:minLines="5"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#1DA1F2"
+            android:textColorHint="#888888"
+            android:textColorLink="#1DA1F2"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 </RelativeLayout>
