@@ -37,7 +37,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ComposeActivity" />
+            android:name=".ComposeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"></data>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
