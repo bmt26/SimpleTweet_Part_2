@@ -21,7 +21,7 @@ import okhttp3.Headers;
 public class ComposeActivity extends AppCompatActivity {
 
     public static final String TAG = "ComposeActivity";
-    public static final int MAX_TWEET_LENGTH = 140;
+    public static final int MAX_TWEET_LENGTH = 280;
 
     EditText etCompose;
     Button btnTweet;
@@ -35,7 +35,7 @@ public class ComposeActivity extends AppCompatActivity {
 
         client = TwitterApp.getRestClient(this);
 
-        etCompose = findViewById(R.id.etCompose);
+        etCompose = findViewById(R.id.tietCompose);
         btnTweet = findViewById(R.id.btnTweet);
 
         // Set click listener on button
